@@ -42,7 +42,9 @@ public class Linked_func {
 			}
 		}
 	}
-	
+	/*
+	 * Method to add elemnts in between the linked list.
+	 */
 	public void addBetween() {
 		if(head==null) {
 			System.out.println("List is empty");
@@ -63,6 +65,19 @@ public class Linked_func {
 				}
 				temp=temp.next;
 			}
+		}
+	}
+	/*
+	 * Method to delete the element at first.
+	 */
+	public void delAtFirst() {
+		if(head==null) {
+			System.out.println("List is empty");
+		}
+		else {
+			Node temp= head.next;
+			head.next=null;
+			head=temp;
 		}
 	}
 	/**
