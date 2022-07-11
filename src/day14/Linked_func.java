@@ -97,6 +97,29 @@ public class Linked_func {
 			prev.next=null;
 		}
 	}
+	/*
+	 * Method to find the element in the linked list.
+	 */
+	public void findEle() {
+		if(head==null) {
+			System.out.println("List is empty");
+		}
+		else {
+			System.out.println("Enter the element to search");
+			int e = Linked_main.sc.nextInt();
+			Node temp=head;
+			while(temp.next!=null) {
+				if(temp.data==e) {
+					System.out.println("Data found");
+					break;
+				}
+				temp=temp.next;
+			}
+			if(temp.next==null) {
+				System.out.println("No data found");
+			}
+		}
+	}
 	/**
 	 * Method to diplay the elements in the linked list.
 	 */
