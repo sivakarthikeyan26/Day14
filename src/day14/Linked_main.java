@@ -10,7 +10,7 @@ public class Linked_main {
 		boolean choice=true;
 		Linked_func lf = new Linked_func();
 		while(choice) {
-			System.out.println("1.Add elements\n2.Display elements\n3.Add elements at first\n4.Exit program");
+			System.out.println("1.Add elements\n2.Display elements\n3.Add elements at first\n4.Addbetween\n5.Exit program");
 			int ch = sc.nextInt();
 			switch(ch) {
 			case 1:
@@ -23,6 +23,9 @@ public class Linked_main {
 				lf.addFirst();
 				break;
 			case 4:
+				lf.addBetween();
+				break;
+			case 5:
 				choice=false;
 				break;
 			default:
