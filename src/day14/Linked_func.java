@@ -80,6 +80,23 @@ public class Linked_func {
 			head=temp;
 		}
 	}
+	/*
+	 * Method to delete the last element
+	 */
+	public void delLast() {
+		if(head==null) {
+			System.out.println("List is empty");
+		}
+		else {
+			Node temp =head;
+			Node prev=head;
+			while(temp.next!=null) {
+				prev=temp;
+				temp=temp.next;
+			}
+			prev.next=null;
+		}
+	}
 	/**
 	 * Method to diplay the elements in the linked list.
 	 */
