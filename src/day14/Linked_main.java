@@ -7,19 +7,29 @@ import java.util.Scanner;
 public class Linked_main {
 	public static Scanner sc = new Scanner(System.in);
 	public static void main(String[] args) {
+		boolean choice=true;
 		Linked_func lf = new Linked_func();
-		System.out.println("1.Add elements\n2.Display elements");
-		int ch = sc.nextInt();
-		switch(ch) {
-		case 1:
-			lf.add();
-			break;
-		case 2:
-			lf.display();
-			break;
-		default:
-			System.out.println("Enter the correct choice");
+		while(choice) {
+			System.out.println("1.Add elements\n2.Display elements\n3.Add elements at first\n4.Exit program");
+			int ch = sc.nextInt();
+			switch(ch) {
+			case 1:
+				lf.add();
+				break;
+			case 2:
+				lf.display();
+				break;
+			case 3:
+				lf.addFirst();
+				break;
+			case 4:
+				choice=false;
+				break;
+			default:
+				System.out.println("Enter the correct choice");
+			}
 		}
+		
 	}
 
 }
