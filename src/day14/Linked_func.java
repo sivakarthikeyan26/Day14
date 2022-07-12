@@ -8,6 +8,7 @@ public class Linked_func {
 	/**
 	 * Method to add the elements to the last of the linked list
 	 * And this method is also used to insert elements into stack.
+	 * Method to add elements to queue is also used here
 	 */
 	public void add() {
 		int n = Linked_main.sc.nextInt();
@@ -29,6 +30,7 @@ public class Linked_func {
 	}
 	/**
 	 * Method to add elements in front of the linked list
+	 * 
 	 */
 	public void addFirst() {
 		if(head==null) {
@@ -72,6 +74,7 @@ public class Linked_func {
 	}
 	/*
 	 * Method to delete the element at first.
+	 * Method to dequeue elements form the queue is also implemented with this.
 	 */
 	public void delAtFirst() {
 		if(head==null) {
@@ -85,6 +88,7 @@ public class Linked_func {
 	}
 	/*
 	 * Method to delete the last element
+	 * Method to pop elements from stack;
 	 */
 	public void delLast() {
 		if(head==null) {
