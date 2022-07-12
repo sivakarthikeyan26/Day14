@@ -10,7 +10,7 @@ public class Linked_main {
 		boolean choice=true;
 		Linked_func lf = new Linked_func();
 		while(choice) {
-			System.out.println("1.Add elements\n2.Display elements\n3.Add elements at first\n4.Addbetween\n5.Delete at first\n6.Delete last element\n7.Find element\n8.To create sorted linked list\n9.Exit program");
+			System.out.println("1.Add elements\n2.Display elements\n3.Add elements at first\n4.Addbetween\n5.Delete at first\n6.Delete last element\n7.Find element\n8.To create sorted linked list\n9.Add elements to stack\n10.Exit");
 			int ch = sc.nextInt();
 			switch(ch) {
 			case 1:
@@ -38,6 +38,8 @@ public class Linked_main {
 				lf.sort();
 				break;
 			case 9:
+				lf.add();
+			case 10:
 				choice=false;
 				break;
 			default:

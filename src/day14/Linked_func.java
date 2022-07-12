@@ -7,6 +7,7 @@ public class Linked_func {
 	
 	/**
 	 * Method to add the elements to the last of the linked list
+	 * And this method is also used to insert elements into stack.
 	 */
 	public void add() {
 		int n = Linked_main.sc.nextInt();
@@ -162,6 +163,7 @@ public class Linked_func {
 		}
 		System.out.println("Sorted linked list is created");
 	}
+	
 	/**
 	 * Method to diplay the elements in the linked list.
 	 */
