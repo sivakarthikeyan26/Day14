@@ -10,7 +10,7 @@ public class Node {
 	/**
 	 * 
 	 * @param d
-	 * Method to insert data into the node.
+	 * Method to insert data into the node
 	 */
 	public Node(int d) {
 		this.data=d;

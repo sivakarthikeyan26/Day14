@@ -88,7 +88,7 @@ public class Linked_func {
 	}
 	/*
 	 * Method to delete the last element
-	 * Method to pop elements from stack;
+	 * Method to pop elements from stack
 	 */
 	public void delLast() {
 		if(head==null) {

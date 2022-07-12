@@ -2,7 +2,7 @@ package day14;
 
 import java.util.Scanner;
 /*
- * main function to get user's choice.
+ * main function to get user's choice
  */
 public class Linked_main {
 	public static Scanner sc = new Scanner(System.in);
